@@ -12,7 +12,12 @@ elif opt == '*':
     print (num1 * num2)
 
 elif opt == '/':
-    print (num1 / num2)
+
+    try:
+        print (num1 / num2)
+
+    except ZeroDivisionError:
+        print("Ekkkk! Dividing by zero is not allowed.")
 
 else:
-    print("Synthax Error.")
+    print("Synthax Error")
